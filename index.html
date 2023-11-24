@@ -5,22 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terjemahkan Angka ke Nihongo</title>
+
+    <!-- file css -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- file javascript -->
+    <script src="scripts.js"></script>
+
 </head>
 
 <body>
     <h1>Pilih banyaknya Digit Angka</h1>
     <div>
-        <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="puluhan">
-        <label for="jumlahDigit">Puluhan</label>
-        <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ratusan">
-        <label for="jumlahDigit">Ratusan</label>
-        <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ribuan">
-        <label for="jumlahDigit">Ribuan</label>
-        <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="puluhanribu">
-        <label for="jumlahDigit">Puluhan Ribu</label>
-        <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ratusanribu">
-        <label for="jumlahDigit">Ratusan Ribu</label>
-        <button type="button">Randomize</button>
+        <form action="">
+            <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="puluhan">
+            <label for="jumlahDigit">Puluhan</label>
+            <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ratusan">
+            <label for="jumlahDigit">Ratusan</label>
+            <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ribuan">
+            <label for="jumlahDigit">Ribuan</label>
+            <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="puluhanRibu">
+            <label for="jumlahDigit">Puluhan Ribu</label>
+            <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ratusanRibu">
+            <label for="jumlahDigit">Ratusan Ribu</label>
+            <button type="button" onclick="getDigitValue()">Randomize</button>
+        </form>
+    </div>
+    <div id="angkaRandom">
+
+    </div>
+    <div id="jawaban">
+
     </div>
 </body>
 
