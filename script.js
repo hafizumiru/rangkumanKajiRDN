@@ -110,3 +110,5 @@ function cekPuluhan() {
     }
     arrayLetter.push(puluhan);
 }
+
+
