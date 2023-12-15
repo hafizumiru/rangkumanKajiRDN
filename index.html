@@ -4,193 +4,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rangkuman Kaji RDN</title>
-
-    <!-- file css -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <!-- file javascript -->
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="styles.css">
+    <title>Rangkuman RDN Kaji</title>
 </head>
 
 <body>
-    <div class="kelasKe1">
-        <h1>Kelas ke-1</h1>
-        <h2>Kalimat Positif</h2>
-        <h3>Pola</h3>
-        <h3>KB1 + Wa + KB2 + Desu.</h3>
-        <h3>Contoh:</h3>
-        <ul>
-            <li>Watashi wa Mirul desu.</li>
-            <li>Saya adalah Mirul</li>
-            <li>Kare wa Bilal san desu.</li>
-            <li>Dia(Laki-laki) adalah Bilal</li>
-            <li>Kanojo wa Miku san desu.</li>
-            <li>Dia(Perempuan) adalah Miku</li>
-        </ul>
-        <h2>Kalimat Negatif</h2>
-        <h3>Pola</h3>
-        <h3>KB1 + Wa + KB2 + Dewa Arimasen. (Formal)</h3>
-        <h3>Atau </h3>
-        <h3>KB1 + Wa + KB2 + Jya Arimasen. (Informal)</h3>
-        <h3>Contoh:</h3>
-        <ul>
-            <li>Watashi wa Mirul Dewa Arimasen. (Ketika berbicara kepada yg lebih Tua)</li>
-            <li>saya bukan Mirul</li>
-            <li>Kare wa Bilal san Jya Arimasen. (Ketika berbicara kepada teman atau suasana akrab)</li>
-            <li>Dia bukan Bilal</li>
-        </ul>
-        <h2>Menyatakan Juga</h2>
-        <h3>Pola</h3>
-        <h3>KB1 + Mo + KB2 + Desu.</h3>
-        <h3>Contoh:</h3>
-        <ul>
-            <li>Watashi/Kare/Kanojo/Bilal san mo Indoneshia jin(orang) desu.</li>
-            <li>Saya/Dia/Bilal juga orang Indonesia</li>
-        </ul>
-        <h2>Menanyakan Sesuatu</h2>
-        <h3>Pola</h3>
-        <h3>KB1 + Wa + KB2 + Desuka?</h3>
-        <h3>Contoh:</h3>
-        <h4>Percakapan</h4>
-        <ul>
-            <li>Anata wa Indoneshia jin desuka?</li>
-            <li>Apakah kamu orang Indonesia?</li>
-        </ul>
-        <h4>Dapat dijawab dengan</h4>
-        <ul>
-            <li>Hai, Indoneshia jin desu. (Kalimat Positif)</li>
-            <li>Ya, saya orang Indonesia.</li>
-            <br>
-            <b>atau jika bukan</b>
-
-            <li>Iie, Indoneshia jin dewa arimasen. (Kalimat Negatif)</li>
-            <li>Bukan, saya bukan orang Indonesia.</li>
-        </ul>
-        <h2>Menyatakan Kepemilikan/Keterangan</h2>
-        <h3>Pola</h3>
-        <h3>KB1 + No + KB2 + Desu.</h3>
-        <h3>Contoh:</h3>
-        <ul>
-            <li>Watashi no Pasokon desu.</li>
-            <li>Komputer milik saya</li>
-            <li>Mirul san wa Indoneshia Daigaku no Gakusei desu.</li>
-            <li>Mirul adalah mahasiswa di Universitas Indonesia</li>
-        </ul>
-        <h2>Menanyakan Nama Orang</h2>
-        <h3>Bertanya langsung kepada lawan bicara</h3>
-        <ul>
-            <li>Anata no Namae wa nan desuka?</li>
-            <li>Siapa nama kamu?</li>
-            <li>Watashi *(no namae) wa Mirul desu. *boleh tidak dipakai</li>
-            <li>Nama saya Mirul</li>
-            <br>
-            <b>dalam beberapa kasus dapat dipersingkat</b>
-            <li>Onamae wa?</li>
-            <li>Nama Anda?</li>
-        </ul>
-        <h3>Bertanya tentang orang lain kepada lawan bicara</h3>
-        <ul>
-            <li>Ano Kata wa Donata desuka? (Lebih Formal)</li>
-            <br>
-            <b>atau</b>
-            <li>Ano Hito wa Dare desuka? (Sudah Akrab)</li>
-            <br>
-            <i>artinya sama</i>
-            <li>Siapa orang itu?</li>
-        </ul>
-        <h2>Menanyakan Umur Orang</h2>
-        <h3>Pola</h3>
-        <h3>KB1 + Wa + Nan Sai + Desuka?</h3>
-        <ul>
-            <li>Anata wa nansai desuka?</li>
-            <li>Berapa usia mu?</li>
-            <li>19 sai desu</li>
-            <li>19 tahun</li>
-            <li>Mirul san wa nansai desuka?</li>
-            <li>Berapa usia Mirul?</li>
-            <li>40 sai desu</li>
-            <li>40 tahun</li>
-        </ul>
-        <h2>Angka</h2>
-        <div>
-            <form action="">
-                <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="puluhan">
-                <label for="jumlahDigit">Puluhan</label>
-                <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ratusan">
-                <label for="jumlahDigit">Ratusan</label>
-                <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ribuan">
-                <label for="jumlahDigit">Ribuan</label>
-                <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="puluhanRibu">
-                <label for="jumlahDigit">Puluhan Ribu</label>
-                <input type="radio" id="jumlahDigit" class="jumlahDigit" name="jumlahDigit" value="ratusanRibu">
-                <label for="jumlahDigit">Ratusan Ribu</label>
-                <button type="button" onclick="getDigitValue()">Randomize</button>
-            </form>
+    <div class="container">
+        <div class="content-list">
+            <!-- Initially empty, will be updated dynamically -->
         </div>
-        <div id="angkaRandom">
+        <div class="content-container">
+            <div id="home" class="content-element">
+                <h1>Home Content</h1>
+                <!-- Add Home content here -->
+            </div>
+            <div id="content1" class="content-element">
+                <h1>Content 1 Content</h1>
+                <div id="subContent1_1" class="sub-content">
+                    <h2>Kalimat Positif</h2>
+                    <h3>Pola</h3>
+                    <h3>KB1 + Wa + KB2 + Desu.</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Watashi wa Mirul desu.</li>
+                        <li>Saya adalah Mirul</li>
+                        <li>Kare wa Bilal san desu.</li>
+                        <li>Dia(Laki-laki) adalah Bilal</li>
+                        <li>Kanojo wa Miku san desu.</li>
+                        <li>Dia(Perempuan) adalah Miku</li>
+                    </ul>
+                </div>
+                <div id="subContent1_2" class="sub-content">
+                    <h2>Kalimat Negatif</h2>
+                    <h3>Pola</h3>
+                    <h3>KB1 + Wa + KB2 + Dewa Arimasen. (Formal)</h3>
+                    <h3>Atau </h3>
+                    <h3>KB1 + Wa + KB2 + Jya Arimasen. (Informal)</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Watashi wa Mirul Dewa Arimasen. (Ketika berbicara kepada yg lebih Tua)</li>
+                        <li>saya bukan Mirul</li>
+                        <li>Kare wa Bilal san Jya Arimasen. (Ketika berbicara kepada teman atau suasana akrab)</li>
+                        <li>Dia bukan Bilal</li>
+                    </ul>
+                </div>
+                <div id="subContent1_3" class="sub-content">
+                    <h2>Menyatakan Juga</h2>
+                    <h3>Pola</h3>
+                    <h3>KB1 + Mo + KB2 + Desu.</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Watashi/Kare/Kanojo/Bilal san mo Indoneshia jin(orang) desu.</li>
+                        <li>Saya/Dia/Bilal juga orang Indonesia</li>
+                    </ul>
+                </div>
+                <div id="subContent1_4" class="sub-content">
+                    <h2>Menanyakan Sesuatu</h2>
+                    <h3>Pola</h3>
+                    <h3>KB1 + Wa + KB2 + Desuka?</h3>
+                    <h3>Contoh:</h3>
+                    <h4>Percakapan</h4>
+                    <ul>
+                        <li>Anata wa Indoneshia jin desuka?</li>
+                        <li>Apakah kamu orang Indonesia?</li>
+                    </ul>
+                    <h4>Dapat dijawab dengan</h4>
+                    <ul>
+                        <li>Hai, Indoneshia jin desu. (Kalimat Positif)</li>
+                        <li>Ya, saya orang Indonesia.</li>
+                        <br>
+                        <b>atau jika bukan</b>
 
+                        <li>Iie, Indoneshia jin dewa arimasen. (Kalimat Negatif)</li>
+                        <li>Bukan, saya bukan orang Indonesia.</li>
+                    </ul>
+                </div>
+                <div id="subContent1_5" class="sub-content">
+                    <h2>Menyatakan Kepemilikan/Keterangan</h2>
+                    <h3>Pola</h3>
+                    <h3>KB1 + No + KB2 + Desu.</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Watashi no Pasokon desu.</li>
+                        <li>Komputer milik saya</li>
+                        <li>Mirul san wa Indoneshia Daigaku no Gakusei desu.</li>
+                        <li>Mirul adalah mahasiswa di Universitas Indonesia</li>
+                    </ul>
+                </div>
+                <div id="subContent1_6" class="sub-content">
+                    <h2>Menanyakan Nama Orang</h2>
+                    <h3>Bertanya langsung kepada lawan bicara</h3>
+                    <ul>
+                        <li>Anata no Namae wa nan desuka?</li>
+                        <li>Siapa nama kamu?</li>
+                        <li>Watashi *(no namae) wa Mirul desu. *boleh tidak dipakai</li>
+                        <li>Nama saya Mirul</li>
+                        <br>
+                        <b>dalam beberapa kasus dapat dipersingkat</b>
+                        <li>Onamae wa?</li>
+                        <li>Nama Anda?</li>
+                    </ul>
+                    <h3>Bertanya tentang orang lain kepada lawan bicara</h3>
+                    <ul>
+                        <li>Ano Kata wa Donata desuka? (Lebih Formal)</li>
+                        <br>
+                        <b>atau</b>
+                        <li>Ano Hito wa Dare desuka? (Sudah Akrab)</li>
+                        <br>
+                        <i>artinya sama</i>
+                        <li>Siapa orang itu?</li>
+                    </ul>
+                </div>
+                <div id="subContent1_7" class="sub-content">
+                    <h2>Menanyakan Umur Orang</h2>
+                    <h3>Pola</h3>
+                    <h3>KB1 + Wa + Nan Sai + Desuka?</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Anata wa nansai desuka?</li>
+                        <li>Berapa usia mu?</li>
+                        <li>19 sai desu</li>
+                        <li>19 tahun</li>
+                        <li>Mirul san wa nansai desuka?</li>
+                        <li>Berapa usia Mirul?</li>
+                    </ul>
+                    <h4></h4>
+                </div>
+            </div>
+            <div id="content2" class="content-element">
+                <h1>Content 2 Content</h1>
+                <div id="subContent2_1" class="sub-content">
+                    <h2>Kata tunjuk</h2>
+                    <h3>Jenis</h3>
+                    <ul>
+                        <li>Kore : ini</li>
+                        <li>Sore : itu (dekat dengan pembicara)</li>
+                        <li>Are : itu (jauh dari keduanya)</li>
+                    </ul>
+                    <h3>Pola</h3>
+                    <h3>Kore/Sore/Are + Wa + KB + Desu</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Kore wa ringo desu.</li>
+                        <li>Ini adalah apel.</li>
+                        <li>Sore wa ringo desu.</li>
+                        <li>Itu adalah apel.</li>
+                        <li>Are wa ringo desu.</li>
+                        <li>Itu adalah apel.</li>
+                    </ul>
+                    <h4>Percakapan</h4>
+                    <ul>
+                        <li>Kore wa nan desuka?</li>
+                        <li>Ini apa?</li>
+                        <li>Sore wa ringo desu.</li>
+                        <li>Itu apel.</li>
+                        <br>
+                        <li>Sore wa nan desuka?</li>
+                        <li>Itu apa?</li>
+                        <li>Kore wa ringo desu.</li>
+                        <li>Ini apel.</li>
+                        <br>
+                        <li>Are wa nan desuka?</li>
+                        <li>Itu apa?</li>
+                        <li>Are wa ringo desu.</li>
+                        <li>Itu apel.</li>
+                    </ul>
+                    <h4>Variasi menebak benda</h4>
+                    <ul>
+                        <li>Kore wa banana desuka?</li>
+                        <li>Apakah ini pisang?</li>
+                        <li>Hai, soudesu.</li>
+                        <li>Ya, betul.</li>
+                        <br>
+                        <li>Sore wa mikan desuka?</li>
+                        <li>Apakah itu jeruk?</li>
+                        <li>Iie. Kore wa ringo desu</li>
+                        <li>Bukan. Itu buah apel.</li>
+                    </ul>
+                    <h4>Variasi menebak benda dengan 2 hal</h4>
+                    <ul>
+                        <li>:Kore wa mikan desuka? Kaki desuka?</li>
+                        <li>Apakah ini jeruk? Atau kesemek?</li>
+                        <li>Sore wa kaki desu.</li>
+                        <li>Itu adalah kesemek.</li>
+                    </ul>
+                    <h4>Variasi menebak benda dengan 2 hal</h4>
+                    <ul>
+                        <li>:Kore wa mikan desuka? Kaki desuka?</li>
+                        <li>Apakah ini jeruk? Atau kesemek?</li>
+                        <li>Sore wa kaki desu.</li>
+                        <li>Itu adalah kesemek.</li>
+                    </ul>
+                </div>
+                <div id="subContent2_2" class="sub-content">
+                    <h2>Menanyakan kepemilikan</h2>
+                    <h3>Pola</h3>
+                    <h3>Kore/Sore/Are + Wa + Dare No + KB + Desuka?</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Kore wa dare no mikan desuka?</li>
+                        <li>ini jeruk milik siapa?</li>
+                        <li>Eko san no mikan desu.</li>
+                        <li>Jeruk milik Eko</li>
+                    </ul>
+                </div>
+                <div id="subContent2_3" class="sub-content">
+
+                </div>
+            </div>
+            <div id="cheatsheet" class="content-element">
+                <h1>Cheat Sheet</h1>
+                <h2>Partikel Wa</h2>
+                
+            </div>
         </div>
-        <div id="jawaban">
+        <!-- 
+            ini adalah template content, tinggal ganti X dengan angka konten ke berapa
 
-        </div>
+            <div id="contentX" class="content-element">
+                <h1>Content 3 Content</h1>
+                <div id="subContentX_1" class="sub-content">
+                    <h2>Kalimat Positif</h2>
+                    <h3>Pola</h3>
+                    <h3>KB1 + Wa + KB2 + Desu.</h3>
+                    <h3>Contoh:</h3>
+                    <ul>
+                        <li>Watashi wa Mirul desu.</li>
+                        <li>Saya adalah Mirul</li>
+                        <li>Kare wa Bilal san desu.</li>
+                        <li>Dia(Laki-laki) adalah Bilal</li>
+                        <li>Kanojo wa Miku san desu.</li>
+                        <li>Dia(Perempuan) adalah Miku</li>
+                    </ul>
+                </div>
+                <div id="subContentX_2" class="sub-content">
+                    <h2>Sub-content 3.2</h2>
+                    <p>Some additional information for Sub-content 3.2</p>
+                </div>
+                <div id="subContentX_1" class="sub-content">
+                    <h2>Sub-content 3.3</h2>
+                    <p>Some additional information for Sub-content 3.3</p>
+                </div>
+            </div> 
+        -->
     </div>
 
-    <div class="kelasKe2">
-        <h1>Kelas ke-2</h1>
-
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#content1">Pertemuan 1</a></li>
+                <li><a href="#content2">Pertemuan 2</a></li>
+                <li><a href="#content3">Pertemuan 3</a></li>
+                <li><a href="#cheatsheet">Cheat Sheet</a></li>
+            </ul>
+        </nav>
     </div>
-
-    <div class="kelasKe3">
-        <h1>Kelas ke-3</h1>
-
-
     </div>
-
-    <div class="kelasKe4">
-        <h1>Kelas ke-4</h1>
-
-
-    </div>
-
-    <div class="kelasKe5">
-        <h1>Kelas ke-5</h1>
-
-
-    </div>
-
-    <div class="kelasKe6">
-        <h1>Kelas ke-6</h1>
-
-
-    </div>
-
-    <div class="kelasKe7">
-        <h1>Kelas ke-7</h1>
-
-
-    </div>
-
-    <div class="kelasKe8">
-        <h1>Kelas ke-8</h1>
-
-
-    </div>
-
-    <div class="kelasKe9">
-        <h1>Kelas ke-9</h1>
-
-
-    </div>
-
-    <div class="kelasKe10">
-        <h1>Kelas ke-10</h1>
-
-
-    </div>
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
+
+<!-- Subject + Wa + KB + Ga + Kata Sifat
+Contoh:
+Osaka wa tabemono ga oishii desu
+Osaka makanannya enak
+
+Indonesia  -->

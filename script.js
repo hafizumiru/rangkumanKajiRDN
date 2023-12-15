@@ -1,114 +1,76 @@
-let digit;
-let randomNumber;
-let arrayNumber;
-let satuan;
-let puluhan;
-let ratusan;
-let ribuan;
-let puluhRibuan;
-let ratusRibuan;
-let jawaban;
-let arrayLetter = [];
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all content elements and store them in an array
+    var contentElements = document.querySelectorAll('.content-element');
 
-function getDigitValue() {
-    digit = document.querySelector('input[name="jumlahDigit"]:checked');
+    // Get all navigation links
+    var navLinks = document.querySelectorAll('.navbar a');
 
-    if (digit.value == "puluhan") {
-        randomNumber = Math.floor(Math.random() * (99 - 11 + 1)) + 11;
+    // Function to show a specific content element
+    function showContent(targetContentId) {
+        // Hide all content elements
+        contentElements.forEach(function(content) {
+            content.style.display = 'none';
+        });
 
-    } else if (digit.value == "ratusan") {
-        randomNumber = Math.floor(Math.random() * (999 - 101 + 1)) + 101;
-
-    } else if (digit.value == "ribuan") {
-        randomNumber = Math.floor(Math.random() * (9999 - 1001 + 1)) + 1001;
-
-    } else if (digit.value == "puluhanRibu") {
-        randomNumber = Math.floor(Math.random() * (99999 - 10001 + 1)) + 10001;
-
-    } else if (digit.value == "ratusanRibu") {
-        randomNumber = Math.floor(Math.random() * (999999 - 100001 + 1)) + 100001;
-
+        // Show only the target content element
+        var targetContent = document.getElementById(targetContentId);
+        if (targetContent) {
+            targetContent.style.display = 'block';
+        }
     }
 
-    document.getElementById('angkaRandom').innerHTML = randomNumber;
-    cekNihongo();
+    // Function to update the content-list
+    function updateContentList() {
+        // Get the .content-list element
+        var contentList = document.querySelector('.content-list');
 
-}
+        // Clear existing content in content-list
+        contentList.innerHTML = '';
 
-function cekNihongo() {
-    arrayLetter.length = 0;
-    arrayNumber = String(randomNumber).split('').map(Number).reverse();
-    satuan = arrayNumber[0];
-    puluhan = arrayNumber[1];
-    ratusan = arrayNumber[2];
-    ribuan = arrayNumber[3];
-    puluhRibuan = arrayNumber[4];
-    ratusRibuan = arrayNumber[5];
+        // Get the currently displayed content
+        var displayedContent = document.querySelector('.content-element[style="display: block;"]');
 
-    if (satuan !== 0) {
-        cekSatuan()
+        // If there is displayed content, find its sub-content headings and add them to the content-list
+        if (displayedContent) {
+            var subContentHeadings = displayedContent.querySelectorAll('.sub-content h2');
 
-    } else {
-        arrayLetter.push("");
+            subContentHeadings.forEach(function (heading) {
+                var listItem = document.createElement('li');
+                listItem.textContent = heading.textContent;
 
+                // Add a click event listener to scroll to the corresponding sub-content
+                listItem.addEventListener('click', function() {
+                    // Scroll smoothly to the sub-content
+                    heading.parentElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+
+                // Append the list item to the content-list
+                contentList.appendChild(listItem);
+            });
+        }
     }
 
-    if (puluhan !== 0) {
-        cekPuluhan()
+    // Add click event listener to each navigation link
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default behavior of the link
 
-    } else {
-        arrayLetter.push("");
+            // Get the target content ID from the link's href attribute
+            var targetContentId = link.getAttribute('href').substring(1);
 
-    }
-    jawaban = arrayLetter[1] + "juu " + arrayLetter[0]
-    document.getElementById('jawaban').innerHTML = jawaban;
+            // Show the clicked content
+            showContent(targetContentId);
 
-}
+            // Update the content-list
+            updateContentList();
+        });
+    });
 
-function cekSatuan() {
-    if (satuan == 1) {
-        satuan = "ichi";
-    } else if (satuan == 2) {
-        satuan = "ni"
-    } else if (satuan == 3) {
-        satuan = "san"
-    } else if (satuan == 4) {
-        satuan = "yon"
-    } else if (satuan == 5) {
-        satuan = "go"
-    } else if (satuan == 6) {
-        satuan = "roku"
-    } else if (satuan == 7) {
-        satuan = "nana"
-    } else if (satuan == 8) {
-        satuan = "hachi"
-    } else if (satuan == 9) {
-        satuan = "kyuu"
-    }
-    arrayLetter.push(satuan);
-}
+    // Show the "Home" content by default on page load
+    showContent('home');
 
-function cekPuluhan() {
-    if (puluhan == 1) {
-        puluhan = "";
-    } else if (puluhan == 2) {
-        puluhan = "ni "
-    } else if (puluhan == 3) {
-        puluhan = "san "
-    } else if (puluhan == 4) {
-        puluhan = "yon "
-    } else if (puluhan == 5) {
-        puluhan = "go "
-    } else if (puluhan == 6) {
-        puluhan = "roku "
-    } else if (puluhan == 7) {
-        puluhan = "nana "
-    } else if (puluhan == 8) {
-        puluhan = "hachi "
-    } else if (puluhan == 9) {
-        puluhan = "kyuu "
-    }
-    arrayLetter.push(puluhan);
-}
-
-
+    // Call the function initially to populate content-list on page load
+    updateContentList();
+});

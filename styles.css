@@ -1,0 +1,95 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the container */
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Style the content-list */
+.content-list {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #ffcccb;
+}
+
+/* Add a pointer cursor and a background color on hover for the content-list items */
+.content-list li:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+/* Add a transition for a smooth hover effect */
+.content-list li {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style the content-container */
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* Style the content-element */
+.content-element {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #b3ffb3;
+}
+
+/* Style the sub-content */
+.sub-content {
+    margin-top: 10px;
+}
+
+/* Style the navbar */
+.navbar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin-top: 20px;
+}
+
+/* Style the navigation list */
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navigation links */
+.navbar nav a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.navbar nav a:hover {
+    background-color: #b3e0ff;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
